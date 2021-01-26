@@ -448,7 +448,10 @@ body{
         box-shadow: none;
         margin: 20px auto;
         background: #ffffff;
-        height: 700px;
+    }
+    
+    .registration__page .registration__form, .auth__viewer .auth__form{
+        height: 670px;
     }
 
     .auth__viewer .auth__form .form__container .form{
