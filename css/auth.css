@@ -435,6 +435,7 @@ body{
 @media only screen and (max-width: 800px){
     .auth__viewer{
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(15 ,62 ,182, 0.5), rgba(23 ,53 ,112, 0.6)), url("../images/42812769_l 1.png");
+        position: fixed;
     }
 
     .auth__viewer .auth__full__view__image{
