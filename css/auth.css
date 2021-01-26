@@ -448,7 +448,7 @@ body{
         box-shadow: none;
         margin: 20px auto;
         background: #ffffff;
-        height: 90%;
+        height: 700px;
     }
 
     .auth__viewer .auth__form .form__container .form{
