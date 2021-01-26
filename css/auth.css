@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root{
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --darker-blue: #173570;
+    --sea-blue: #0f3eb6;
+    --lighter-blue: #31d5ec;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    min-height: 100%;
+}
+
+.hidden__display{
+    display: none !important;
+}
+
+.auth__viewer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+}
+
+.auth__viewer .auth__form{
+    width: 35%;
+    height: 100%;
+    box-shadow: 0 16px 32px rgba(15, 62, 182, 0.55);
+}
+
+.auth__viewer .auth__full__view__image{
+    width: 65%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(15 ,62 ,182, 0.5), rgba(23 ,53 ,112, 0.6)), url("../images/42812769_l 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.auth__viewer .auth__form .form__container{
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 35px 0 15px;
+    position: relative;
+}
+
+.auth__viewer .auth__form .form__container .company__logo{
+    width: 55%;
+    height: 70px;
+    margin: 20px auto;
+}
+
+.auth__viewer .auth__form .form__container .company__logo img,
+.registration__page .registration__form .registration__container .company__logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.auth__viewer .auth__form .form__container .form{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 12px;
+}
+
+.auth__viewer .auth__form .form__container .form header{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--darker-blue);
+}
+
+.auth__viewer .auth__form .form__container .form .notifs{
+    width: 85%;
+    text-align: center;
+    color: var(--darker-blue);
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body{
+    margin: 45px 0 20px;
+    width: 100%;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .form-group:first-child{
+    margin-bottom: 28px;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .form-group label,
+.registration__page .registration__form .registration__container form .registration__tab .form-group label{
+    padding-left: 0;
+    color: var(--darker-blue);
+    font-size: 12px;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .form-group input,
+.registration__page .registration__form .registration__container form .registration__tab .form-group input{
+    border-radius: 4px;
+    border: 1px solid #f0f6ff;
+    padding: 10px;
+    color: var(--darker-blue);
+    font-size: 12px;
+}
+
+.registration__page .registration__form .registration__container form .registration__tab .form-group select{
+    padding: 6px 10px;
+    width: 100%;
+    color: var(--darker-blue);
+    border-radius: 4px;
+    border: 1px solid #f0f6ff;
+    font-size: 12px;
+    outline: none;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .form-group input:focus,
+.registration__page .registration__form .registration__container form .registration__tab .form-group input:focus{
+    border: 1px solid var(--darker-blue);
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .form-group input::placeholder,
+.registration__page .registration__form .registration__container form .registration__tab .form-group input::placeholder{
+    color: var(--darker-blue);
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .forgot__password__link {
+    margin: 15px 0 40px;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .forgot__password__link a{
+    color: var(--sea-blue);
+    font-size: 13px;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .forgot__password__link a:hover{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .submit__button__container{
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 30px auto
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .submit__button__container button{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 20px;
+    background: var(--sea-blue);
+    color: #f0f6ff;
+    border: none;
+    border-radius: 4px;
+}
+
+.auth__viewer .auth__form .form__container .form .form__body form .submit__button__container button:hover{
+    background: transparent;
+    border: 1px solid var(--sea-blue);
+    color: var(--sea-blue);
+    transition: 0.2s ease-out;
+}
+
+.auth__viewer .auth__form .form__container .create__account__link{
+    width: 100%;
+    text-align: center;
+    color: var(--darker-blue);
+    font-size: 12px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform:  translateX(-50%);
+}
+
+.auth__viewer .auth__form .form__container .create__account__link a{
+    padding: 10px 14px;
+    border: 1px solid var(--sea-blue);
+    color: var(--sea-blue);
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.auth__viewer .auth__form .form__container .create__account__link a:hover{
+    background: var(--sea-blue);
+    color: #f0f6ff;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s ease-in;
+}
+
+.registration__page{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(15 ,62 ,182, 0.5), rgba(23 ,53 ,112, 0.6)), url("../images/42812769_l 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.registration__page .registration__form{
+    width: 35%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 1px solid #F0F6FF;
+    box-shadow: 0px 2px 24px rgba(40, 112, 152, 0.08);
+    border-radius: 8px;
+    position: absolute;
+    padding: 20px 15px;
+}
+
+.registration__page .registration__form .registration__container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.registration__page .registration__form .registration__container .company__logo {
+    width: 35%;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.registration__page .registration__form .registration__container .registration__stages{
+    margin: 40px 0 15px;
+    width: 100%;
+    height: auto;
+}
+
+.registration__page .registration__form .registration__container .registration__stages .stage{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.registration__page .registration__form .registration__container .registration__stages .stage div{
+    width: 33%;
+    text-align: center;
+    color: var(--darker-blue);
+    opacity: .5;
+    font-size: 11px;
+}
+
+.registration__page .registration__form .registration__container .registration__stages .stage .activated{
+    color: #31d5ec;
+    font-weight: 600;
+    animation: paint 2s;
+}
+
+@keyframes paint{
+    from{color: #F0F6FF}
+    to{color: #31d5ec}
+}
+
+@-webkit-keyframes paint{
+    from{color: #F0F6FF}
+    to{color: #31d5ec}
+}
+
+@-moz-keyframes paint{
+    from{color: #F0F6FF}
+    to{color: #31d5ec}
+}
+
+.registration__page .registration__form .registration__container .registration__stages .stage__indicator{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.registration__page .registration__form .registration__container .registration__stages .stage__indicator div{
+    background: #F0F6FF;
+}
+
+
+
+.registration__page .registration__form .registration__container .registration__stages .stage__indicator .straight__line{
+    height: 2px;
+    width: 31%;
+}
+
+.registration__page .registration__form .registration__container .registration__stages .stage__indicator .rounded__circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+.registration__page .registration__form .registration__container .registration__stages .stage__indicator .activated{
+    background: #31d5ec;
+    animation: color 2s;
+}
+
+@keyframes color{
+    from{background: #F0F6FF}
+    to{background: #31d5ec}
+}
+
+@-webkit-keyframes color{
+    from{background: #F0F6FF}
+    to{background: #31d5ec}
+}
+
+@-moz-keyframes color{
+    from{background: #F0F6FF}
+    to{background: #31d5ec}
+}
+
+.registration__page .registration__form .registration__container form .registration__tab{
+    width: 100%;
+    height: auto;
+}
+
+.registration__page .registration__form .registration__container form .registration__tab:not(:first-child) {
+    display: none;
+}
+
+.registration__page .registration__form .registration__container form .registration__tab header{
+    width: 100%;
+    padding: 14px 0 22px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--darker-blue);
+}
+
+.registration__page .registration__form .registration__container form .registration__tab .form-group:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.registration__page .registration__form .registration__container form .registration__tab .form-group:last-child{
+    margin-bottom: 10px;
+}
+
+.registration__page .registration__form .registration__container form .navigation__buttons{
+    width: 100%;
+    position: absolute;
+    padding: 12px 0;
+    bottom: 10%;
+    height: auto;
+}
+
+.registration__page .registration__form .registration__container form .navigation__buttons .full_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.registration__page .registration__form .registration__container form .navigation__buttons .full_container button{
+    border: none;
+    position: absolute;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    outline: none;
+}
+
+.registration__page .registration__form .registration__container form .navigation__buttons .full_container button .icon{
+    font-size: 16px;
+    margin: -1px 6px;
+}
+
+.registration__page .registration__form .registration__container form .navigation__buttons .full_container .back{
+    color: var(--sea-blue);
+    border: 1px solid var(--sea-blue);
+    left: 0;
+    background: #ffffff;
+    padding: 8px 27px 8px 18px;
+}
+
+.registration__page .registration__form .registration__container form .navigation__buttons .full_container .forward,
+.registration__page .registration__form .registration__container form .navigation__buttons .full_container .finish{
+    background: var(--sea-blue);
+    color: #ffffff;
+    right: 0;
+}
+
+.registration__page .registration__form .registration__container form .navigation__buttons .full_container .forward{
+    padding: 10px 12px 10px 22px;
+}
+
+.registration__page .registration__form .registration__container form .navigation__buttons .full_container .finish{
+    padding: 10px 26px;
+    display: none;
+}
+
+.registration__page .registration__form .registration__container form .registration__tab .input__flex__display{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.registration__page .registration__form .registration__container form .registration__tab .input__flex__display .form-group{
+    width: 49%;
+}
+
+.registration__page .registration__form .registration__container form .registration__tab .input__flex__display .form-group:last-child{
+    margin-left: 14px;
+}
+
+.show__error__messages, .error__message{
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.show__error__messages{
+    padding: 0;
+}
+
+.error__message{
+    padding: 6px 0;
+}
+
+@media screen and (max-width: 800px){
+    .auth__viewer{
+        position: relative;
+    }
+
+    .auth__viewer .auth__full__view__image{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+
+    .auth__viewer .auth__form{
+        width: 95%;
+        border-radius: 15px;
+        box-shadow: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background: #ffffff;
+        height: 90%;
+    }
+
+    .auth__viewer .auth__form .form__container .form{
+        margin: 15px 0;
+    }
+
+    .auth__viewer .auth__form .form__container .form .form__body{
+        margin-top: 15px;
+    }
+
+    .auth__viewer .auth__form .form__container .create__account__link{
+        font-size: 11px;
+    }
+
+    .auth__viewer .auth__form .form__container .create__account__link a{
+        font-size: 11px;
+        padding: 10px 12px;
+    }
+
+    .auth__viewer .auth__form .form__container .company__logo{
+        width: 45%;
+        height: 56px;
+    }
+
+    .registration__page .registration__form{
+        width: 90%;
+    }
+}
+
+
+
