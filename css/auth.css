@@ -453,6 +453,7 @@ body{
         z-index: 2;
         background: #ffffff;
         height: 90%;
+        display: none;
     }
 
     .auth__viewer .auth__form .form__container .form{
