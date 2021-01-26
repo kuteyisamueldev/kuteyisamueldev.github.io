@@ -434,25 +434,18 @@ body{
 
 @media only screen and (max-width: 800px){
     .auth__viewer{
-        position: relative;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(15 ,62 ,182, 0.5), rgba(23 ,53 ,112, 0.6)), url("../images/42812769_l 1.png");
     }
 
     .auth__viewer .auth__full__view__image{
-        width: 100%;
-        position: absolute;
-        left: 0;
-        z-index: 1;
+        display: none;
     }
 
     .auth__viewer .auth__form{
         width: 95%;
         border-radius: 15px;
         box-shadow: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
+        margin: 20px auto;
         background: #ffffff;
         height: 80%;
     }
