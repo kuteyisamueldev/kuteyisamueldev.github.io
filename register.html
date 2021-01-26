@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Registration page</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/fontawesome/all.css" rel="stylesheet" type="text/css">
+    <link href="../css/auth.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <main class="registration__page">
+     <div class="registration__form">
+        <div class="registration__container">
+            <div class="company__logo">
+                <img src="../images/logo.png" alt="company logo">
+            </div>
+
+            <div class="registration__stages">
+                <div class="stage">
+                    <div class="activated">Account Setup</div>
+                    <div>Organisation Setup</div>
+                    <div>Contact Setup</div>
+                </div>
+
+                <div class="stage__indicator">
+                    <div class="straight__line activated"></div>
+                    <div class="rounded__circle activated"></div>
+                    <div class="straight__line"></div>
+                    <div class="rounded__circle"></div>
+                    <div class="straight__line"></div>
+                    <div class="rounded__circle"></div>
+                </div>
+            </div>
+
+            <form method="post" action="login.html" id="registration__form">
+                <div class="registration__tab">
+                    <header>Provide your account details</header>
+                    <div class="form-group">
+                        <label for="username" class="col-md-6">Username</label>
+                        <input class="form-control form-field" type="text" id="username" name="username" placeholder="Enter username">
+                        <div class="error__message username_error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="col-md-6">Password</label>
+                        <input class="form-control form-field" type="password" id="password" name="password" placeholder="Enter password">
+                        <div class="error__message password_error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password" class="col-md-6">Confirm password</label>
+                        <input class="form-control form-field" type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter password">
+                        <div class="error__message confirm_password_error"></div>
+                    </div>
+                </div>
+
+                <div class="registration__tab">
+                    <header>Provide organization details</header>
+                    <div class="input__flex__display">
+                        <div class="form-group">
+                            <label for="organization_name" class="col-md-10">Organization name</label>
+                            <input class="form-control form-field" type="text" id="organization_name" name="organization_name" placeholder="Enter organization name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="industry_type" class="col-md-10">Industry Type</label>
+                            <select id="industry_type" class="form-field">
+                                <option value="" disabled selected>Select industry</option>
+                                <option value="construction">Construction</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__flex__display">
+                        <div class="form-group">
+                            <label for="country" class="col-md-10">Country</label>
+                            <input class="form-control form-field" type="text" id="country" name="country">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state" class="col-md-10">State</label>
+                            <input class="form-control form-field" type="text" id="state" name="state">
+                        </div>
+                    </div>
+
+                    <div class="input__flex__display">
+                        <div class="form-group">
+                            <label for="city" class="col-md-10">City</label>
+                            <input class="form-control form-field" type="text" id="city" name="city">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address" class="col-md-10">Address</label>
+                            <input class="form-control form-field" type="text" id="address" name="address">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="postal_code" class="col-md-10">Postal code</label>
+                        <input class="form-control form-field" type="text" id="postal_code" name="postal_code">
+                    </div>
+                </div>
+
+                <div class="registration__tab">
+                    <header>Provide contact details</header>
+                    <div class="input__flex__display">
+                        <div class="form-group">
+                            <label for="first_name" class="col-md-10">First name</label>
+                            <input class="form-control form-field" type="text" id="first_name" name="first_name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last_name" class="col-md-10">Last name</label>
+                            <input class="form-control form-field" type="text" id="last_name" name="last_name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occupation" class="col-md-10">Occupation</label>
+                        <input class="form-control form-field" type="text" id="occupation" name="occupation">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="col-md-10">Email</label>
+                        <input class="form-control form-field" type="text" id="email" name="email">
+                        <div class="error__message email_error"></div>
+                    </div>
+                </div>
+                <div class="show__error__messages"></div>
+
+                <div class="navigation__buttons">
+                    <div class="full_container">
+                        <button class="back hidden__display"><span class="icon"><i class="bx bx-left-arrow-alt"></i></span> Back</button>
+                        <button class="forward">Next <span class="icon"><i class="bx bx-right-arrow-alt"></i></span></button>
+                        <button class="finish">Finish</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+     </div>
+ </main>
+
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/registration_script.js"></script>
+</body>
+</html>
