@@ -452,7 +452,7 @@ body{
         transform: translate(-50%, -50%);
         z-index: 2;
         background: #ffffff;
-        height: 90%;
+        height: 80%;
     }
 
     .auth__viewer .auth__form .form__container .form{
