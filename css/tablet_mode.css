@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .tab__view__mode{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tab__view__mode .side__bar{
+        width: 7%;
+        height: 100%;
+        background: #173570;
+        position: relative;
+    }
+
+    .tab__view__mode .side__bar .logo {
+        width: 100%;
+        height: auto;
+        padding: 25px 0;
+    }
+
+    .tab__view__mode .side__bar .logo img{
+        width: 36px;
+        height: 36px;
+        display: block;
+        margin: auto;
+    }
+
+    .tab__view__mode .side__bar .icons{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tab__view__mode .side__bar .icons .icon{
+        width: fit-content;
+        width: -moz-fit-content;
+        margin: 18px auto;
+    }
+
+    .tab__view__mode .side__bar .icons .icon i{
+        font-size: 28px;
+        color: #ffffff;
+    }
+
+    .tab__view__mode .side__bar .icons .icon:first-child i{
+        color: #31d5ec;
+    }
+
+
+    .tab__view__mode .side__bar .user__profile__picture{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 25px;
+    }
+
+    .tab__view__mode .side__bar .user__profile__picture img{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .tab__view__mode .people__location__list{
+        width: 45%;
+        height: 100%;
+    }
+
+    .tab__view__mode .people__location__map{
+        width: 48%;
+        height: 100%;
+    }
+}

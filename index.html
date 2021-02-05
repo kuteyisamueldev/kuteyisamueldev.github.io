@@ -2,53 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Login page</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/fontawesome/all.css" rel="stylesheet" type="text/css">
-    <link href="../css/auth.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tablet view mode</title>
+    <link href="css/tablet_mode.css" rel="stylesheet" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+<section class="tab__view__mode">
+    <div class="side__bar">
+        <div class="logo">
+            <img src="images/logo_mini.png" alt="company logo">
+        </div>
 
-    <main class="auth__viewer">
-        <section class="auth__form">
-            <div class="form__container">
-                <div class="company__logo">
-                    <img src="../images/logo.png" alt="company logo">
-                </div>
+        <div class="icons">
+            <div class="icon"><i class='bx bxs-map'></i></div>
+            <div class="icon"><i class='bx bxs-calendar-event'></i></div>
+            <div class="icon"><i class='bx bx-message-rounded-detail'></i></div>
+            <div class="icon"><i class='bx bx-check-circle'></i></div>
+            <div class="icon"><i class='bx bx-time-five'></i></div>
+            <div class="icon"><i class='bx bx-phone-call'></i></div>
+            <div class="icon"><i class='bx bx-spreadsheet'></i></div>
+        </div>
 
-                <div class="form">
-                    <header>Login</header>
+        <div class="user__profile__picture">
+            <img src="images/profile-picture.png" alt="profile picture">
+        </div>
+    </div>
 
-                    <div class="form__body">
-                        <form method="post" action="">
-                            <div class="form-group">
-                                <label for="username" class="col-md-6">Username</label>
-                                <input class="form-control" type="text" id="username" name="username" placeholder="Enter username">
-                            </div>
+    <div class="people__location__list">
 
-                            <div class="form-group">
-                                <label for="password" class="col-md-6">Password</label>
-                                <input class="form-control" type="password" id="password" name="password" placeholder="Enter your password">
-                            </div>
+    </div>
 
-                            <div class="forgot__password__link"><a href="send_password_recovery_mail.html">Forgot password?</a></div>
+    <div class="people__location__map">
 
-                            <div class="submit__button__container">
-                                <button type="submit" name="submit">Log in</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="create__account__link">Don't have an account? <a href="register.html">Create Account</a></div>
-            </div>
-        </section>
-
-        <section class="auth__full__view__image">
-
-        </section>
-    </main>
-
+    </div>
+</section>
 </body>
 </html>
